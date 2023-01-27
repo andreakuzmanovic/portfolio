@@ -1,0 +1,54 @@
+body{
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+
+.ImePrezime {
+
+    position: fixed;
+    z-index: 0;
+    top: 10px;
+    left: 430px;
+    transition: transform .1s; /* Animation */
+}
+.ImePrezime :hover {
+    transform: scale(1.1);
+}
+nav {
+    position: flex;
+    float: right;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 240px;
+	padding-left: 2%;
+	padding-right: 2%;
+    z-index: 0;
+}
+
+nav ul li{
+	list-style-type: none;
+	padding: 16px;
+}
+
+nav ul li :hover{
+	color: #FFFF9C;
+	transition: .3s;
+    transform: scale(1.2);
+}
+
+.dugmence {
+    animation: kotrljanje infinite linear 3s;
+    position: flex;
+    
+}
+
+@keyframes kotrljanje {
+ 0%{transform: rotate(0deg);}
+ 100%{transform:rotate(-360deg);}
+}
+
+marquee {
+    z-index: 10;
+    position: flex;
+}
